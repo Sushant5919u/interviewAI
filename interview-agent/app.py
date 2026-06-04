@@ -422,7 +422,7 @@ def render_new_interview() -> None:
         with candidate_left:
             name = st.text_input("Candidate name", placeholder="Payal Sobhani")
         with candidate_right:
-            email = st.text_input("Email", placeholder="payal@example.com")
+            email = st.text_input("Email", placeholder="payal.sobhani@example.com")
 
         uploaded_resume = st.file_uploader("Upload resume PDF", type=["pdf"])
 
@@ -795,14 +795,12 @@ def main() -> None:
             label_visibility="collapsed",
         )
         st.divider()
-        st.caption("Agent status")
-        st.success("Resume Analyzer ready")
-        st.success("Question Generator ready")
-        st.success("Evaluation Agent ready")
-        st.success("Roadmap Agent ready")
-        st.caption(
-            "Running in local mode. Set GEMINI_API_KEY to enable Gemini-powered responses."
-        )
+        # st.caption("Agent status")
+        # st.success("Resume Analyzer ready")
+        # st.success("Question Generator ready")
+        # st.success("Evaluation Agent ready")
+        # st.success("Roadmap Agent ready")
+        
 
     pages = {
         "Dashboard": render_dashboard,
